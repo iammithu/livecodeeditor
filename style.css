@@ -5,14 +5,17 @@ body{
     background: #333;;
 }
 
-    #container {
-      display: flex;
-      flex-direction: row-reverse; 
-    } 
-
+#container {
+    display: flex;
+    flex-direction: row-reverse;
+} 
+.dsahfo{
+    height: 1000px;
+    width: 100%;
+}
 .container{
     font-family: "Source Sans 3", sans-serif;
-    height: 1000px;
+    
 }
 
 .header{
@@ -44,8 +47,7 @@ body{
     height: 35%;
     float: left;
     box-sizing: border-box;
-    position: relative;
-    margin-right: 0;
+    margin: none;
 }
 
 .editor #html{
@@ -72,24 +74,24 @@ body{
     max-width: 40%;
     border-radius: 8px; 
     left: 8px;
-    margin-right: 0%;
+    margin-right: none;
 }
 
 .preview{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    width: 58%; /* Initial width */
+    top: 65px;
+    position: fixed;
+    width: 57%; /* Initial width */
     min-width: 30%; /* Minimum width */
-    max-width: 75%; /* Maximum width */
+    max-width: 80%; /* Maximum width */
     transition: width 0.3s;
-    height: 499px;
+
     background: #fff;
     border-radius: 8px;
     right: 8px;
     outline: none;
-    min-height: 350px;
-    max-height: 600px;
-
+    height: 499px;
+    min-height: 200px;
+    max-height: 620px;
 }
 
 .preview iframe{
@@ -118,10 +120,31 @@ body{
     flex-direction: row-reverse;
     position: relative;
     bottom: 25px;
+    left: 100px;
+    width: 90%;
+    color: red;
+    display: none;
+}
+#btn{
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    width: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn:hover{
+    box-shadow: 1px 1px 1px gray;
+}
+#settings{
+    color: white;
+    border-radius: 50%;
 }
 
+
 .sliders{
-   
    height: 30px;
    width:90%;
 }
