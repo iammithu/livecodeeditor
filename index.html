@@ -8,44 +8,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/panda-syntax.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/hint/show-hint.min.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Day #42 - Live Code Editor | AsmrProg</title>
 </head>
 
 <body>
     
-    <div class="container">
         <div class="header">
             <div class="title">
                 <div class="main-title">
                     Live Code Editor
                 </div>
 	        <div class="sliders">
-		       
+                <button id="btn"><img src="settings_FILL0_wght400_GRAD0_opsz24.png"  id="settings" onclick="setting()"></button>
 		       <div id="widthSlider1">
-                   <div id="sliderValue2">493px</div><input type="range" class="widthSlider" min="350px" max="600px" value="499px" oninput="updateHeight(this.value)">
-                    <input type="range" class="widthSlider"  min="30" max="80" value="56" oninput="updateWidtho(this.value)"><div id="sliderValue1">878px</div>
+                   <input type="range" class="widthSlider" min="200px" max="620px" value="499px" oninput="updateHeight(this.value)">
+                   <div id="sliderValue2">493px"</div>  height of preview = " <input type="range" class="widthSlider"  min="30%" max="80%" value="57%" oninput="updateWidtho(this.value)"><div id="sliderValue1">878px"</div>  width of preview = "
 		       </div>
 		</div>
             </div>
         </div>
-
-        <div class="code-box" id="resizableDiv2">
-            <h6 style="margin: 0px; padding: 0px; background-color: black; color: white; text-align: center;">HTML</h6>
-            <div class="editor" id="html"></div>
-	    <h6 style="margin: 0px; padding: 0px; background-color: black; color: white; text-align: center;">CSS</h6>
-            <div class="editor" id="css"></div>
-	    <h6 style="margin: 0px; padding: 0px; background-color: black; color: white; text-align: center;">JS</h6>
-            <div class="editor" id="js"></div>
-        </div>
-	<div id="container">
-            <div class="preview" id="resizableDiv1">
-               <iframe id="live-preview"></iframe>
+           <div class="code-box" id="resizableDiv2">
+                <h6 style="margin: 0px; padding: 0px; background-color: black; color: white; text-align: center;">HTML</h6>
+                <div class="editor" id="html"></div>
+            <h6 style="margin: 0px; padding: 0px; background-color: black; color: white; text-align: center;">CSS</h6>
+                <div class="editor" id="css"></div>
+            <h6 style="margin: 0px; padding: 0px; background-color: black; color: white; text-align: center;">JS</h6>
+                <div class="editor" id="js"></div>
             </div>
-	</div>
-        
 
-    </div>
+
+
+        <div id="container">
+            <div class="preview" id="resizableDiv1">
+            <iframe id="live-preview"></iframe>
+            </div>
+        </div>
+    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/htmlmixed/htmlmixed.min.js"></script>
