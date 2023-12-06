@@ -134,11 +134,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 #btn:hover{
     box-shadow: 1px 1px 1px gray;
-    
 }
 #settings{
     color: white;
