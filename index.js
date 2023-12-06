@@ -152,3 +152,18 @@ function updateHeight(value) {
     sliderValue.classList.toggle('default', value == defaultSliderValue);
 
   };
+  var isClicked = fatse;
+  function setting(){
+    var settings = document.getElementById('widthSlider1');
+    var settingColor = document.getElementById('btn');
+
+    if (isClicked){
+    settings.style.display = 'flex';
+    settingColor.style.backgroundColor = 'green';
+  } else{
+    settings.style.display = 'none';
+    settingColor.style.backgroundColor = 'white';
+  }
+
+  isClicked = !isClicked;
+};
